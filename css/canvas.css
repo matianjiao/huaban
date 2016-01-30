@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "微软雅黑";
+    -webkit-user-select: none;
+    background: url("../images/193011.jpg");
+}
+.content{
+    width:1250px;
+    height: 600px;
+    border:1px solid black;
+    margin: 20px auto;
+    position: relative;
+}
+.left{
+    width:60px;
+    height: 600px;
+    float: left;
+}
+.xuanxiang{
+    width: 60px;
+    height: 74.8px;
+    background:rgba(199,205,202,0.4);
+    border-bottom:1px dotted black;
+    position: relative;
+    line-height: 74.8px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+.xuanxiang1{
+    padding: 5px;
+    line-height: 30px;
+}
+.son{
+    width: 70px;
+    position: absolute;
+    right:-70px;
+    top:0px;
+    background: rgba(199,205,202,0.7);
+    line-height: 25px;
+    font-size: 14px;
+    padding:0px 10px;
+    display: none;
+    z-index: 4 ;
+}
+.son>div{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted black;
+    transition: all 0.5s ease-in-out;
+}
+.son>div:hover{
+    background:rgba(133,133,133,0.5);
+}
+.son .last{
+    border-bottom: none;
+}
+.color-son{
+    height: 74.8px;
+    padding: 22px 0;
+}
+
+.shapes>div{
+    font-size: 18px;
+}
+
+.box{
+    width: 1188px;
+    height: 600px;
+    float: right;
+    position: relative;
+}
+.copy{
+    width:1188px;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 0.5;
+}
+canvas{
+    background: rgba(235,230,236,0.5);
+}
+
+.xp{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    border: 1px solid black;
+    display: none;
+}
+.selectarea{
+    width: 100px;
+    height: 100px;
+    border: 1px dotted black;
+    position: absolute;
+    top: 0;
+    left:0;
+    display: none;
+}
+.xiao2{
+    height: 74.8px;
+    padding-top: 8px;
+}
+
+.xuanzebg{
+    background: #999;
+}

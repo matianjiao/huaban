@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'mtj';
+  src: url('../font/iconfont.ttf');
+}
+*[data-role=wujiao]:before {
+  font-family: mtj;
+  content: "\e616";
+}
+*[data-role=wujiao][icon-pos=top]:before {
+  display: block;
+  font-family: mtj;
+  content: "\e616";
+}
+*[data-role=wujiao][icon-pos=left]:before {
+  font-family: mtj;
+  content: "\e616";
+}
+*[data-role=wujiao][icon-pos=right]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=wujiao][icon-pos=right]:after {
+  font-family: mtj;
+  content: "\e616";
+}
+*[data-role=wujiao][icon-pos=bottom]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=wujiao][icon-pos=bottom]:after {
+  display: block;
+  font-family: mtj;
+  content: "\e616";
+}
+*[data-role=pen]:before {
+  font-family: mtj;
+  content: "\e620";
+}
+*[data-role=pen][icon-pos=top]:before {
+  display: block;
+  font-family: mtj;
+  content: "\e620";
+}
+*[data-role=pen][icon-pos=left]:before {
+  font-family: mtj;
+  content: "\e620";
+}
+*[data-role=pen][icon-pos=right]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=pen][icon-pos=right]:after {
+  font-family: mtj;
+  content: "\e620";
+}
+*[data-role=pen][icon-pos=bottom]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=pen][icon-pos=bottom]:after {
+  display: block;
+  font-family: mtj;
+  content: "\e620";
+}
+*[data-role=rect]:before {
+  font-family: mtj;
+  content: "\e6dd";
+}
+*[data-role=rect][icon-pos=top]:before {
+  display: block;
+  font-family: mtj;
+  content: "\e6dd";
+}
+*[data-role=rect][icon-pos=left]:before {
+  font-family: mtj;
+  content: "\e6dd";
+}
+*[data-role=rect][icon-pos=right]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=rect][icon-pos=right]:after {
+  font-family: mtj;
+  content: "\e6dd";
+}
+*[data-role=rect][icon-pos=bottom]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=rect][icon-pos=bottom]:after {
+  display: block;
+  font-family: mtj;
+  content: "\e6dd";
+}
+*[data-role=circle]:before {
+  font-family: mtj;
+  content: "\e6dc";
+}
+*[data-role=circle][icon-pos=top]:before {
+  display: block;
+  font-family: mtj;
+  content: "\e6dc";
+}
+*[data-role=circle][icon-pos=left]:before {
+  font-family: mtj;
+  content: "\e6dc";
+}
+*[data-role=circle][icon-pos=right]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=circle][icon-pos=right]:after {
+  font-family: mtj;
+  content: "\e6dc";
+}
+*[data-role=circle][icon-pos=bottom]:before {
+  font-family: mtj;
+  content: "";
+}
+*[data-role=circle][icon-pos=bottom]:after {
+  display: block;
+  font-family: mtj;
+  content: "\e6dc";
+}

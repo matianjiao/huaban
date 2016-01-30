@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'mtj';
+  src:url('../font/iconfont.ttf');
+}
+
+@name1:wujiao;
+@name2:pen;
+@name3:rect;
+@name4:circle;
+
+
+@con1:e616;
+@con2:e620;
+@con3:e6dd;
+@con4:e6dc;
+
+
+
+.for(@i:1) when (@i<=4){
+  @n:'name@{i}';
+  @n1:@@n;//对应的名字   eg:tx
+  @c:'con@{i}';
+  @c1:@@c;
+
+  //before  图标在前 前面显示content内容
+  *[data-role=@{n1}]:before{
+    font-family: mtj;
+    content:"\@{c1}";
+  }
+
+  *[data-role=@{n1}][icon-pos=top]:before{
+    display:block;
+    font-family: mtj;
+    content:"\@{c1}";
+  }
+
+  *[data-role=@{n1}][icon-pos=left]:before{
+    font-family: mtj;
+    content:"\@{c1}";
+  }
+
+  //设置右 和 下 的时候将之前的放在前面的图标去掉  下面这段代码产生的图标
+  //*[data-role=@{n1}]:before{
+  //  font-family: mtj;
+  //  content:"\@{c1}";
+  //}
+  *[data-role=@{n1}][icon-pos=right]:before{
+    font-family: mtj;
+    content:"";
+  }
+  *[data-role=@{n1}][icon-pos=right]:after{
+    font-family: mtj;
+    content:"\@{c1}";
+  }
+
+
+  *[data-role=@{n1}][icon-pos=bottom]:before{
+    font-family: mtj;
+    content:"";
+  }
+  *[data-role=@{n1}][icon-pos=bottom]:after{
+    display:block;
+    font-family: mtj;
+    content:"\@{c1}";
+  }
+  .for(@i+1);
+}
+.for();
+
+
+
+
+
+
+
+

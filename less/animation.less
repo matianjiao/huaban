@@ -1,0 +1,237 @@
+//显示
+@keyframes show {
+  100%{
+    transform:scale(1,1);
+    opacity:1;
+  }
+  0%{
+    transform: scale(0,0);
+    opacity: 0;
+  }
+}
+*[data-ani*=animate-show]{
+  animation: show 1s forwards;
+  transform-origin: left top;
+}
+//隐藏
+@keyframes hide {
+  0%{
+    transform:scale(1,1);
+    opacity:1;
+  }
+  100%{
+    transform: scale(0,0);
+    opacity: 0;
+  }
+}
+
+*[data-ani*=animate-hide]{
+  animation: hide 1s forwards;
+  transform-origin: left top;
+}
+
+//淡入
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+*[data-ani*=animate-fadein]{
+  animation: fadein 1s forwards;
+  transform-origin:top left;
+}
+
+//淡出
+@keyframes fadeout {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+*[data-ani*=animate-fadeout]{
+  animation: fadeout 1s forwards;
+  transform-origin:top left;
+}
+
+
+//上滑
+@keyframes slideup {
+  0%{
+    transform:scale(1,1)
+  }
+  100%{
+    transform: scale(1,0);
+  }
+}
+*[data-ani*=animate-slideup]{
+  animation: slideup 0.5s forwards;
+  transform-origin:top;
+}
+//下拉
+@keyframes slidedown {
+  0%{
+    transform:scale(1,0)
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+*[data-ani*=animate-slidedown]{
+  animation: slidedown 0.5s forwards;
+  transform-origin:top;
+}
+//右边为轴 右向左
+@keyframes sliderleft {
+  0%{
+    transform:scale(0,1)
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+*[data-ani*=animate-sliderleft]{
+  animation: sliderleft 0.5s linear;
+  transform-origin:right;
+}
+//右边为轴 左向右
+@keyframes slidelright {
+  0%{
+    transform:scale(1,1)
+  }
+  100%{
+    transform: scale(0,1);
+  }
+}
+*[data-ani*=animate-slidelright]{
+  animation: slidelright 0.5s linear;
+  transform-origin:right;
+}
+
+
+//左边为轴 左向右
+@keyframes slidelright1 {
+  0%{
+    transform:scale(0,1)
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+*[data-ani*=animate-slidelright1]{
+  animation: slidelright1 0.5s linear;
+  transform-origin:left;
+}
+//左边为轴 右向左
+@keyframes sliderleft1 {
+  0%{
+    transform:scale(1,1)
+  }
+  100%{
+    transform: scale(0,1);
+  }
+}
+*[data-ani*=animate-sliderleft1]{
+  animation: sliderleft1 0.5s linear;
+  transform-origin:left;
+}
+
+
+
+
+//从下到上重复
+@keyframes xiashang {
+  0%{
+    transform:translateY(50px);
+  }
+  100%{
+    transform:translateY(-50px);
+  }
+}
+*[data-ani*=animate-xiashang]{
+  animation: xiashang 1.5s infinite;
+}
+
+
+
+
+//圆周运动
+@r:30;//半径
+@a:0;//角度
+@speed:10;//速度
+@num:360/@speed;//动一下走的角度
+
+.round(@i:0) when (@i<=@num) {
+  @select :100/@num*1%*@i;//100/@num*1%动一下的百分比
+  @a:@speed*@i;//转的角度
+  @{select}{
+    transform:translate(cos(@a*pi()/180)*@r*1px,sin(@a*pi()/180)*@r*1px);
+  }
+  .round(@i+1);
+}
+
+@keyframes circle {
+  .round();
+}
+*[data-ani=animate-round]{
+  animation: circle 1s linear infinite;
+}
+
+
+//曲线运动
+@r:100;
+@r1:10;
+@a:0;
+@a1:0;
+@speed:4;
+@speed1:20;
+@num:360/@speed;
+.round1(@i:0) when (@i<=@num) {
+  @select :100/@num*1%*@i;//100/@num*1%动一下的百分比
+  @a:@speed*@i;//转的角度
+  @a1:@speed1*@i;//转的角度
+  @{select}{
+    transform:translate(cos(@a*pi()/180)*@r*1px-(@r*1px),sin(@a1*pi()/180)*@r1*1px);
+  }
+  .round1(@i+1);
+}
+
+@keyframes quxian {
+  .round1();
+}
+*[data-ani=animate-quxian]{
+  animation: quxian 1s linear infinite;
+}
+
+
+//z轴旋转
+@keyframes rotateZ {
+  0%{
+    transform:rotateZ(0deg);
+  }
+  100%{
+    transform:rotateZ(360deg);
+  }
+}
+*[data-ani=animate-rotateZ]{
+  animation: rotateZ 2s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

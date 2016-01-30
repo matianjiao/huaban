@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/canvas.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/shape.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+            <div class="xuanxiang hasson" >
+                <div>文件</div>
+                <div class="son file">
+                    <div>新建</div>
+                    <div>返回</div>
+                    <div class="last">保存</div>
+                </div>
+            </div>
+            <div class="xuanxiang hasson">
+                <div>画图</div>
+                <div class="son shapes">
+                    <div data-role="line">/</div>
+                    <div data-role="rect"></div>
+                    <div data-role="circle"></div>
+                    <div data-role="pen"></div>
+                    <div class="last" data-role="wujiao"></div>
+                </div>
+            </div>
+            <div class="xuanxiang hasson">
+                <div>类型</div>
+                <div class="son type xiao2">
+                    <div data-role="stroke">画线</div>
+                    <div class="last" data-role="fill">填充</div>
+                </div>
+            </div>
+            <div class="xuanxiang xuanxiang1 hasson" data-role="qianbi">
+                <div>线条的颜色</div>
+                <div class="son color-son">
+                    <input class="linecolor" type="color" value="#000000">
+                </div>
+            </div>
+            <div class="xuanxiang xuanxiang1 hasson" data-role="qianbi">
+                <div>填充的颜色</div>
+                <div class="son color-son">
+                    <input type="color" class="fillcolor">
+                </div>
+            </div>
+            <div class="xuanxiang xuanxiang1 hasson" data-role="qianbi">
+                <div>线条的宽度</div>
+                <div class="son linewidth">
+                    <div data-role="1">细</div>
+                    <div data-role="4">中</div>
+                    <div class="last" data-role="8">粗</div>
+                </div>
+            </div>
+            <div class="xuanxiang hasson" data-role="qianbi">
+                <div>橡皮</div>
+                <div class="son xpsize">
+                    <div data-role="8">小</div>
+                    <div data-role="12">中</div>
+                    <div data-role="20" class="last">大</div>
+                </div>
+            </div>
+            <div class="xuanxiang" data-role="qianbi">
+                <div class="select">选择</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="xp"></div>
+            <div class="copy"></div>
+            <div class="selectarea"></div>
+            <canvas></canvas>
+        </div>
+
+    </div>
+</body>
+</html>
